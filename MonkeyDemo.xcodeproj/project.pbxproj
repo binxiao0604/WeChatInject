@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0AED722648F56900C88720 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF0AED712648F56900C88720 /* MDConfig.plist */; };
+		BF0AED7C2648F56A00C88720 /* libMonkeyDemoDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF0AED7B2648F56A00C88720 /* libMonkeyDemoDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF0AED812648F56A00C88720 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0AED802648F56A00C88720 /* JavaScriptCore.framework */; };
+		BF0AED832648F56A00C88720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0AED822648F56A00C88720 /* Foundation.framework */; };
+		BF0AED852648F56A00C88720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0AED842648F56A00C88720 /* UIKit.framework */; };
+		BF0AED8A2648F56A00C88720 /* MonkeyDemoDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED892648F56A00C88720 /* MonkeyDemoDylib.mm */; };
+		BF0AED8D2648F56A00C88720 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AED8C2648F56A00C88720 /* MDConfigManager.h */; };
+		BF0AED8F2648F56A00C88720 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED8E2648F56A00C88720 /* MDConfigManager.m */; };
+		BF0AED912648F56A00C88720 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AED902648F56A00C88720 /* MDCycriptManager.h */; };
+		BF0AED932648F56A00C88720 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED922648F56A00C88720 /* MDCycriptManager.m */; };
+		BF0AED952648F56A00C88720 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AED942648F56A00C88720 /* MDMethodTrace.h */; };
+		BF0AED972648F56A00C88720 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED962648F56A00C88720 /* MDMethodTrace.m */; };
+		BF0AED9A2648F56A00C88720 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED992648F56A00C88720 /* a1a2-selectortramps-arm.s */; };
+		BF0AED9C2648F56A00C88720 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED9B2648F56A00C88720 /* a1a2-selectortramps-arm64.s */; };
+		BF0AED9E2648F56A00C88720 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED9D2648F56A00C88720 /* a1a2-selectortramps-i386.s */; };
+		BF0AEDA02648F56A00C88720 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AED9F2648F56A00C88720 /* a1a2-selectortramps-x86_64.s */; };
+		BF0AEDA22648F56A00C88720 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDA12648F56A00C88720 /* a2a3-selectortramps-arm.s */; };
+		BF0AEDA42648F56A00C88720 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDA32648F56A00C88720 /* a2a3-selectortramps-i386.s */; };
+		BF0AEDA62648F56A00C88720 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDA52648F56A00C88720 /* a2a3-selectortramps-x86_64.s */; };
+		BF0AEDA82648F56A00C88720 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AEDA72648F56A00C88720 /* OCMethodTrace.h */; };
+		BF0AEDAA2648F56A00C88720 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDA92648F56A00C88720 /* OCMethodTrace.m */; };
+		BF0AEDAC2648F56A00C88720 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AEDAB2648F56A00C88720 /* OCSelectorTrampolines.h */; };
+		BF0AEDAE2648F56A00C88720 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDAD2648F56A00C88720 /* OCSelectorTrampolines.mm */; };
+		BF0AEDB22648F56A00C88720 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AEDB12648F56A00C88720 /* LLDBTools.h */; };
+		BF0AEDB42648F56A00C88720 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDB32648F56A00C88720 /* LLDBTools.mm */; };
+		BF0AEDB92648F56A00C88720 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDB82648F56A00C88720 /* AntiAntiDebug.m */; };
+		BF0AEDBC2648F56A00C88720 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDBB2648F56A00C88720 /* fishhook.c */; };
+		BF0AEDBE2648F56A00C88720 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AEDBD2648F56A00C88720 /* fishhook.h */; };
+		BF0AEDC02648F56A00C88720 /* MonkeyDemoDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0AEDBF2648F56A00C88720 /* MonkeyDemoDylib.h */; };
+		BF0AEDC22648F56A00C88720 /* MonkeyDemoDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDC12648F56A00C88720 /* MonkeyDemoDylib.m */; };
+		BF31F60626566F1500052937 /* HotpotCat.cy in Resources */ = {isa = PBXBuildFile; fileRef = BF31F60526566F1400052937 /* HotpotCat.cy */; };
+		BF31F60826566F2600052937 /* HotpotCat.cy in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF31F60526566F1400052937 /* HotpotCat.cy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF0AED7D2648F56A00C88720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0AED5F2648F56900C88720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0AED7A2648F56A00C88720;
+			remoteInfo = MonkeyDemoDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF0AED672648F56900C88720 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF31F60826566F2600052937 /* HotpotCat.cy in CopyFiles */,
+				BF0AED7C2648F56A00C88720 /* libMonkeyDemoDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF0AED6A2648F56900C88720 /* MonkeyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0AED6D2648F56900C88720 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BF0AED6F2648F56900C88720 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		BF0AED712648F56900C88720 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		BF0AED742648F56900C88720 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		BF0AED752648F56900C88720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0AED7B2648F56A00C88720 /* libMonkeyDemoDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMonkeyDemoDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0AED802648F56A00C88720 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		BF0AED822648F56A00C88720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF0AED842648F56A00C88720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF0AED882648F56A00C88720 /* MonkeyDemoDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = MonkeyDemoDylib.xm; sourceTree = "<group>"; };
+		BF0AED892648F56A00C88720 /* MonkeyDemoDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MonkeyDemoDylib.mm; sourceTree = "<group>"; };
+		BF0AED8C2648F56A00C88720 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		BF0AED8E2648F56A00C88720 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		BF0AED902648F56A00C88720 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		BF0AED922648F56A00C88720 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		BF0AED942648F56A00C88720 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		BF0AED962648F56A00C88720 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		BF0AED992648F56A00C88720 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		BF0AED9B2648F56A00C88720 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		BF0AED9D2648F56A00C88720 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		BF0AED9F2648F56A00C88720 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		BF0AEDA12648F56A00C88720 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		BF0AEDA32648F56A00C88720 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		BF0AEDA52648F56A00C88720 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		BF0AEDA72648F56A00C88720 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		BF0AEDA92648F56A00C88720 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		BF0AEDAB2648F56A00C88720 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		BF0AEDAD2648F56A00C88720 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		BF0AEDAF2648F56A00C88720 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		BF0AEDB12648F56A00C88720 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		BF0AEDB32648F56A00C88720 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		BF0AEDB62648F56A00C88720 /* MonkeyDemoDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MonkeyDemoDylib-Prefix.pch"; path = "../MonkeyDemoDylib-Prefix.pch"; sourceTree = "<group>"; };
+		BF0AEDB82648F56A00C88720 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		BF0AEDBB2648F56A00C88720 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		BF0AEDBD2648F56A00C88720 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		BF0AEDBF2648F56A00C88720 /* MonkeyDemoDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonkeyDemoDylib.h; sourceTree = "<group>"; };
+		BF0AEDC12648F56A00C88720 /* MonkeyDemoDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonkeyDemoDylib.m; sourceTree = "<group>"; };
+		BF31F60526566F1400052937 /* HotpotCat.cy */ = {isa = PBXFileReference; lastKnownFileType = file; path = HotpotCat.cy; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0AED642648F56900C88720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0AED782648F56A00C88720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0AED812648F56A00C88720 /* JavaScriptCore.framework in Frameworks */,
+				BF0AED852648F56A00C88720 /* UIKit.framework in Frameworks */,
+				BF0AED832648F56A00C88720 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0AED5E2648F56900C88720 = {
+			isa = PBXGroup;
+			children = (
+				BF0AED6C2648F56900C88720 /* MonkeyDemo */,
+				BF0AED862648F56A00C88720 /* MonkeyDemoDylib */,
+				BF0AED7F2648F56A00C88720 /* Frameworks */,
+				BF0AED6B2648F56900C88720 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0AED6B2648F56900C88720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED6A2648F56900C88720 /* MonkeyDemo.app */,
+				BF0AED7B2648F56A00C88720 /* libMonkeyDemoDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0AED6C2648F56900C88720 /* MonkeyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED6D2648F56900C88720 /* icon.png */,
+				BF0AED752648F56900C88720 /* Info.plist */,
+				BF0AED6E2648F56900C88720 /* Scripts */,
+				BF0AED702648F56900C88720 /* Config */,
+				BF0AED732648F56900C88720 /* TargetApp */,
+			);
+			path = MonkeyDemo;
+			sourceTree = "<group>";
+		};
+		BF0AED6E2648F56900C88720 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED6F2648F56900C88720 /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		BF0AED702648F56900C88720 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BF31F60526566F1400052937 /* HotpotCat.cy */,
+				BF0AED712648F56900C88720 /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BF0AED732648F56900C88720 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED742648F56900C88720 /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		BF0AED7F2648F56A00C88720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED802648F56A00C88720 /* JavaScriptCore.framework */,
+				BF0AED822648F56A00C88720 /* Foundation.framework */,
+				BF0AED842648F56A00C88720 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0AED862648F56A00C88720 /* MonkeyDemoDylib */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AEDBF2648F56A00C88720 /* MonkeyDemoDylib.h */,
+				BF0AEDC12648F56A00C88720 /* MonkeyDemoDylib.m */,
+				BF0AED872648F56A00C88720 /* Logos */,
+				BF0AED8B2648F56A00C88720 /* Config */,
+				BF0AED982648F56A00C88720 /* Trace */,
+				BF0AEDB02648F56A00C88720 /* Tools */,
+				BF0AEDB72648F56A00C88720 /* AntiAntiDebug */,
+				BF0AEDBA2648F56A00C88720 /* fishhook */,
+				BF0AEDB52648F56A00C88720 /* Supporting Files */,
+			);
+			path = MonkeyDemoDylib;
+			sourceTree = "<group>";
+		};
+		BF0AED872648F56A00C88720 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED882648F56A00C88720 /* MonkeyDemoDylib.xm */,
+				BF0AED892648F56A00C88720 /* MonkeyDemoDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		BF0AED8B2648F56A00C88720 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED8C2648F56A00C88720 /* MDConfigManager.h */,
+				BF0AED8E2648F56A00C88720 /* MDConfigManager.m */,
+				BF0AED902648F56A00C88720 /* MDCycriptManager.h */,
+				BF0AED922648F56A00C88720 /* MDCycriptManager.m */,
+				BF0AED942648F56A00C88720 /* MDMethodTrace.h */,
+				BF0AED962648F56A00C88720 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BF0AED982648F56A00C88720 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AED992648F56A00C88720 /* a1a2-selectortramps-arm.s */,
+				BF0AED9B2648F56A00C88720 /* a1a2-selectortramps-arm64.s */,
+				BF0AED9D2648F56A00C88720 /* a1a2-selectortramps-i386.s */,
+				BF0AED9F2648F56A00C88720 /* a1a2-selectortramps-x86_64.s */,
+				BF0AEDA12648F56A00C88720 /* a2a3-selectortramps-arm.s */,
+				BF0AEDA32648F56A00C88720 /* a2a3-selectortramps-i386.s */,
+				BF0AEDA52648F56A00C88720 /* a2a3-selectortramps-x86_64.s */,
+				BF0AEDA72648F56A00C88720 /* OCMethodTrace.h */,
+				BF0AEDA92648F56A00C88720 /* OCMethodTrace.m */,
+				BF0AEDAB2648F56A00C88720 /* OCSelectorTrampolines.h */,
+				BF0AEDAD2648F56A00C88720 /* OCSelectorTrampolines.mm */,
+				BF0AEDAF2648F56A00C88720 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		BF0AEDB02648F56A00C88720 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AEDB12648F56A00C88720 /* LLDBTools.h */,
+				BF0AEDB32648F56A00C88720 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BF0AEDB52648F56A00C88720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AEDB62648F56A00C88720 /* MonkeyDemoDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF0AEDB72648F56A00C88720 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AEDB82648F56A00C88720 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		BF0AEDBA2648F56A00C88720 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				BF0AEDBB2648F56A00C88720 /* fishhook.c */,
+				BF0AEDBD2648F56A00C88720 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF0AED792648F56A00C88720 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0AED912648F56A00C88720 /* MDCycriptManager.h in Headers */,
+				BF0AED952648F56A00C88720 /* MDMethodTrace.h in Headers */,
+				BF0AEDBE2648F56A00C88720 /* fishhook.h in Headers */,
+				BF0AEDC02648F56A00C88720 /* MonkeyDemoDylib.h in Headers */,
+				BF0AEDB22648F56A00C88720 /* LLDBTools.h in Headers */,
+				BF0AED8D2648F56A00C88720 /* MDConfigManager.h in Headers */,
+				BF0AEDAC2648F56A00C88720 /* OCSelectorTrampolines.h in Headers */,
+				BF0AEDA82648F56A00C88720 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF0AED692648F56900C88720 /* MonkeyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0AEDC82648F56A00C88720 /* Build configuration list for PBXNativeTarget "MonkeyDemo" */;
+			buildPhases = (
+				BF0AED632648F56900C88720 /* Sources */,
+				BF0AED642648F56900C88720 /* Frameworks */,
+				BF0AED652648F56900C88720 /* ShellScript */,
+				BF0AED662648F56900C88720 /* Resources */,
+				BF0AED672648F56900C88720 /* CopyFiles */,
+				BF0AED682648F56900C88720 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF0AED7E2648F56A00C88720 /* PBXTargetDependency */,
+			);
+			name = MonkeyDemo;
+			productName = MonkeyDemo;
+			productReference = BF0AED6A2648F56900C88720 /* MonkeyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF0AED7A2648F56A00C88720 /* MonkeyDemoDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0AEDC52648F56A00C88720 /* Build configuration list for PBXNativeTarget "MonkeyDemoDylib" */;
+			buildPhases = (
+				BF0AED762648F56A00C88720 /* ShellScript */,
+				BF0AED772648F56A00C88720 /* Sources */,
+				BF0AED782648F56A00C88720 /* Frameworks */,
+				BF0AED792648F56A00C88720 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonkeyDemoDylib;
+			productName = MonkeyDemoDylib;
+			productReference = BF0AED7B2648F56A00C88720 /* libMonkeyDemoDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0AED5F2648F56900C88720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BF0AED692648F56900C88720 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BF0AED7A2648F56A00C88720 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BF0AED622648F56900C88720 /* Build configuration list for PBXProject "MonkeyDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0AED5E2648F56900C88720;
+			productRefGroup = BF0AED6B2648F56900C88720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0AED692648F56900C88720 /* MonkeyDemo */,
+				BF0AED7A2648F56A00C88720 /* MonkeyDemoDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0AED662648F56900C88720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF31F60626566F1500052937 /* HotpotCat.cy in Resources */,
+				BF0AED722648F56900C88720 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF0AED652648F56900C88720 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		BF0AED682648F56900C88720 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		BF0AED762648F56A00C88720 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0AED632648F56900C88720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0AED772648F56A00C88720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0AED932648F56A00C88720 /* MDCycriptManager.m in Sources */,
+				BF0AED9C2648F56A00C88720 /* a1a2-selectortramps-arm64.s in Sources */,
+				BF0AED9A2648F56A00C88720 /* a1a2-selectortramps-arm.s in Sources */,
+				BF0AEDA02648F56A00C88720 /* a1a2-selectortramps-x86_64.s in Sources */,
+				BF0AEDAA2648F56A00C88720 /* OCMethodTrace.m in Sources */,
+				BF0AED8F2648F56A00C88720 /* MDConfigManager.m in Sources */,
+				BF0AEDBC2648F56A00C88720 /* fishhook.c in Sources */,
+				BF0AEDB92648F56A00C88720 /* AntiAntiDebug.m in Sources */,
+				BF0AEDAE2648F56A00C88720 /* OCSelectorTrampolines.mm in Sources */,
+				BF0AED9E2648F56A00C88720 /* a1a2-selectortramps-i386.s in Sources */,
+				BF0AEDA42648F56A00C88720 /* a2a3-selectortramps-i386.s in Sources */,
+				BF0AEDA22648F56A00C88720 /* a2a3-selectortramps-arm.s in Sources */,
+				BF0AEDC22648F56A00C88720 /* MonkeyDemoDylib.m in Sources */,
+				BF0AED8A2648F56A00C88720 /* MonkeyDemoDylib.mm in Sources */,
+				BF0AEDB42648F56A00C88720 /* LLDBTools.mm in Sources */,
+				BF0AEDA62648F56A00C88720 /* a2a3-selectortramps-x86_64.s in Sources */,
+				BF0AED972648F56A00C88720 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF0AED7E2648F56A00C88720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF0AED7A2648F56A00C88720 /* MonkeyDemoDylib */;
+			targetProxy = BF0AED7D2648F56A00C88720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF0AEDC32648F56A00C88720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF0AEDC42648F56A00C88720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0AEDC62648F56A00C88720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonkeyDemoDylib/MonkeyDemoDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMonkeyDemoDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MonkeyDemoDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		BF0AEDC72648F56A00C88720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonkeyDemoDylib/MonkeyDemoDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMonkeyDemoDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MonkeyDemoDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF0AEDC92648F56A00C88720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S48J667P47;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MonkeyDemo/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guaizai.MonkeyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF0AEDCA2648F56A00C88720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S48J667P47;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MonkeyDemo/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guaizai.MonkeyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0AED622648F56900C88720 /* Build configuration list for PBXProject "MonkeyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0AEDC32648F56A00C88720 /* Debug */,
+				BF0AEDC42648F56A00C88720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0AEDC52648F56A00C88720 /* Build configuration list for PBXNativeTarget "MonkeyDemoDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0AEDC62648F56A00C88720 /* Debug */,
+				BF0AEDC72648F56A00C88720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0AEDC82648F56A00C88720 /* Build configuration list for PBXNativeTarget "MonkeyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0AEDC92648F56A00C88720 /* Debug */,
+				BF0AEDCA2648F56A00C88720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0AED5F2648F56900C88720 /* Project object */;
+}
