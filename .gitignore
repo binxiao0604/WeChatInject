@@ -4,4 +4,5 @@ MonkeyDemo/TargetApp/*.app
 
 MonkeyDemo/tmp/*
 LatestBuild/*
+*.ipa
 

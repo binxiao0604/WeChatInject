@@ -39,6 +39,8 @@
 		BF0AEDC22648F56A00C88720 /* MonkeyDemoDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0AEDC12648F56A00C88720 /* MonkeyDemoDylib.m */; };
 		BF31F60626566F1500052937 /* HotpotCat.cy in Resources */ = {isa = PBXBuildFile; fileRef = BF31F60526566F1400052937 /* HotpotCat.cy */; };
 		BF31F60826566F2600052937 /* HotpotCat.cy in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF31F60526566F1400052937 /* HotpotCat.cy */; };
+		BFB08B75267898F80015E1B8 /* logMethod.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFB08B72267898F80015E1B8 /* logMethod.mm */; };
+		BFB08B76267898F80015E1B8 /* logMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFB08B73267898F80015E1B8 /* logMessage.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +106,11 @@
 		BF0AEDBD2648F56A00C88720 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		BF0AEDBF2648F56A00C88720 /* MonkeyDemoDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonkeyDemoDylib.h; sourceTree = "<group>"; };
 		BF0AEDC12648F56A00C88720 /* MonkeyDemoDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonkeyDemoDylib.m; sourceTree = "<group>"; };
-		BF31F60526566F1400052937 /* HotpotCat.cy */ = {isa = PBXFileReference; lastKnownFileType = file; path = HotpotCat.cy; sourceTree = SOURCE_ROOT; };
+		BF31F60526566F1400052937 /* HotpotCat.cy */ = {isa = PBXFileReference; lastKnownFileType = text; path = HotpotCat.cy; sourceTree = SOURCE_ROOT; };
+		BFB08B71267898F80015E1B8 /* logMethod.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; path = logMethod.xm; sourceTree = "<group>"; };
+		BFB08B72267898F80015E1B8 /* logMethod.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = logMethod.mm; sourceTree = "<group>"; };
+		BFB08B73267898F80015E1B8 /* logMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = logMessage.mm; sourceTree = "<group>"; };
+		BFB08B74267898F80015E1B8 /* logMessage.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; path = logMessage.xm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,10 @@
 		BF0AED872648F56A00C88720 /* Logos */ = {
 			isa = PBXGroup;
 			children = (
+				BFB08B74267898F80015E1B8 /* logMessage.xm */,
+				BFB08B73267898F80015E1B8 /* logMessage.mm */,
+				BFB08B71267898F80015E1B8 /* logMethod.xm */,
+				BFB08B72267898F80015E1B8 /* logMethod.mm */,
 				BF0AED882648F56A00C88720 /* MonkeyDemoDylib.xm */,
 				BF0AED892648F56A00C88720 /* MonkeyDemoDylib.mm */,
 			);
@@ -465,6 +475,7 @@
 				BF0AEDAA2648F56A00C88720 /* OCMethodTrace.m in Sources */,
 				BF0AED8F2648F56A00C88720 /* MDConfigManager.m in Sources */,
 				BF0AEDBC2648F56A00C88720 /* fishhook.c in Sources */,
+				BFB08B75267898F80015E1B8 /* logMethod.mm in Sources */,
 				BF0AEDB92648F56A00C88720 /* AntiAntiDebug.m in Sources */,
 				BF0AEDAE2648F56A00C88720 /* OCSelectorTrampolines.mm in Sources */,
 				BF0AED9E2648F56A00C88720 /* a1a2-selectortramps-i386.s in Sources */,
@@ -475,6 +486,7 @@
 				BF0AEDB42648F56A00C88720 /* LLDBTools.mm in Sources */,
 				BF0AEDA62648F56A00C88720 /* a2a3-selectortramps-x86_64.s in Sources */,
 				BF0AED972648F56A00C88720 /* MDMethodTrace.m in Sources */,
+				BFB08B76267898F80015E1B8 /* logMessage.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,8 +665,6 @@
 					"-weak_library",
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 					"-lcycript",
-					"-framework",
-					RevealServer,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

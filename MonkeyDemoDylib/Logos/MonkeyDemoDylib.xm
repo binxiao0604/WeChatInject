@@ -17,6 +17,8 @@
 
 - (long long)numberOfSectionsInTableView:(UITableView *)tableView;
 
+- (UIImage *)imageWithBundleNamed:(NSString *)name;
+
 @end
 
 @interface NewSettingViewController : UIViewController
@@ -50,7 +52,7 @@
             switchView.on = switchOn;
             [switchView addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
             cell.accessoryView = switchView;
-            cell.imageView.image = [UIImage imageNamed:switchOn ? @"HP_switch_on" : @"HP_switch_off"];
+            cell.imageView.image = [self imageWithBundleNamed:switchOn ? @"HP_switch_on" : @"HP_switch_off"];
         } else if(indexPath.row == 1){//时间cell
             cell = [tableView dequeueReusableCellWithIdentifier:@"TimeCell"];
             if (!cell) {
@@ -64,7 +66,7 @@
             textField.borderStyle = UITextBorderStyleRoundedRect;
             textField.keyboardType = UIKeyboardTypeDecimalPad;
             cell.accessoryView = textField;
-            cell.imageView.image = [UIImage imageNamed:@"HP_time"];
+            cell.imageView.image = [self imageWithBundleNamed:@"HP_time"];
             //监听输入变化，微信目前支持iOS11以上，所以可以不移除。
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChangeValue:) name:UITextFieldTextDidChangeNotification object:textField];
         }
@@ -122,6 +124,15 @@
     if ([self isNewSettingVC:scrollView]) {
         [MSHookIvar<UITableView *>(self,"_tableView") endEditing:YES];
     }
+}
+
+//资源文件
+%new
+- (UIImage *)imageWithBundleNamed:(NSString *)name
+{
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"HPImages" ofType:@"bundle"];
+    UIImage *image = [UIImage imageWithContentsOfFile:[bundlePath stringByAppendingPathComponent:name]];
+    return image;
 }
 
 %end
